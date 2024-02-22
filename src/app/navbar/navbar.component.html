@@ -1,0 +1,56 @@
+<nav>
+  <div class=" d-block ">
+    <div class="top-div  ">
+      <div class="navbar-inner-content container d-flex justify-content-between align-items-center">
+        <div class="navbar-logo-wrapper d-flex ">
+        <span class="logo ">
+          <img src="assets/logo.png" alt="Logo">
+        </span>
+        </div>
+        <div class="navbar-center d-flex">
+          <input type="text" placeholder="Врачи, проецедура" class="search-inp form-control">
+          <a class="btn search ms-2">
+            <fa-icon [icon]="search" class="search-icon"></fa-icon>
+          </a>
+        </div>
+        <div class="navbar-phone">
+          <span class="phone-text">Звоните! Контактный номер</span>
+          <br>
+          <a class="phone-contact" href="tel:+77089350245">+7 (708)-935-02-45</a>
+        </div>
+        <div class="navbar-right d-flex">
+          <div class="login-section d-flex me-5">
+            <button class="btn ">
+              <fa-icon [icon]="login" class="icon-language pe-1"></fa-icon>
+              <span class="small-text">Войти</span>
+            </button>
+          </div>
+          <div class="language-section">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownLanguage"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                <fa-icon [icon]="language" class="icon-language pe-1"></fa-icon>
+                <span class="small-text">{{selectedLanguage}}</span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownLanguage">
+                <li><a class="dropdown-item" href="#" (click)="updateLanguage('RU')">RU</a></li>
+                <li><a class="dropdown-item" href="#" (click)="updateLanguage('KZ')">KZ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-div">
+      <div class="container">
+        <ul class="links">
+          <li><a class="small-text" href="#">Врачи</a></li>
+          <li><a class="small-text" href="#">Процедуры</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+
+  </div>
+</nav>
